@@ -24,7 +24,7 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 
 The ```ToyExample``` folder contains a toy example version of a multiplex network and the associated modified versions of the Python scripts to run community identification for one disease example.
 
-
+-----------------
 Usage
 -----------------
 
@@ -34,7 +34,7 @@ After having checked and/or modified the script parameters in accordance to your
 
 This will create seeds files, configuration files, and output folders for each disease. The community identified for a disease is contained in the file seeds_ID.txt (where ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
 
-
+-----------------
 Example
 -----------------
 
