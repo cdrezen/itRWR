@@ -1,5 +1,12 @@
 # MultiXrank based algorithm for Community Identification using Recursive Random Walk with Restart
 
+.. image:: https://img.shields.io/pypi/pyversions/repRWR.svg
+    :target: https://www.python.org
+    
+.. image:: https://github.com/anthbapt/repRWR/workflows/CI/badge.svg
+    :target: https://github.com/anthbapt/repRWR/actions?query=branch%3Amaster+workflow%3ACI
+    
+ 
 This repository contains an algorithm allowing to perform a recursive random walk with restart on a multiplex network. This algorithm is based on MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
 
 ## Files
