@@ -12,9 +12,9 @@ MultiXrank based algorithm for Community Identification using Recursive Random W
 This repository contains an algorithm allowing to perform a recursive random walk with restart on a multiplex network. This algorithm is based on 
 MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
 
-==
+
  Files
-==
+-----------------
 
 * ``community.py`` : Python script containing the function for community identification based on recursive random walk with restart
 * ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds for each disease
@@ -23,7 +23,9 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 
 The ```ToyExample``` folder contains a toy example version of a multiplex network and the associated modified versions of the Python scripts to run community identification for one disease example.
 
-## Usage
+
+Usage
+-----------------
 
 After having checked and/or modified the script parameters in accordance to your data, run the following command : 
 
@@ -31,7 +33,9 @@ After having checked and/or modified the script parameters in accordance to your
 
 This will create seeds files, configuration files, and output folders for each disease. The community identified for a disease is contained in the file seeds_ID.txt (where ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
 
-## Example
+
+Example
+-----------------
 
 To test the algorithm on a simple example you can run the version of the script ``run_community_ID.py`` contained in the ``ToyExample`` folder. This will apply community identification for one disease, Hutchinson-Gilford Progeria Syndrom (ORPHANET code 740) on a simple multiplex network, with a maximal number of iterations set to 10 for the recursive random walk with restart algorithm. 
 
