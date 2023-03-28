@@ -9,9 +9,12 @@ MultiXrank based algorithm for Community Identification using Recursive Random W
     :target: https://github.com/anthbapt/repRWR/actions?query=branch%3Amaster+workflow%3ACI
     
  
-This repository contains an algorithm allowing to perform a recursive random walk with restart on a multiplex network. This algorithm is based on MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
+This repository contains an algorithm allowing to perform a recursive random walk with restart on a multiplex network. This algorithm is based on 
+MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
 
-. Files
+==
+ Files
+==
 
 * ``community.py`` : Python script containing the function for community identification based on recursive random walk with restart
 * ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds for each disease
