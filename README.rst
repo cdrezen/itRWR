@@ -13,10 +13,10 @@ This repository contains an algorithm allowing to perform a recursive random wal
 
 ## Files
 
-* ```community.py``` : Python script containing the function for community identification based on recursive random walk with restart
-* ```create_config_seed_files.py``` : Python script to generate the configuration yml files and the files containing the seeds for each disease
-* ```run_community_ID.py``` : Main Python script containing the function to automatize the community identification for a list of diseases
-* ```orpha_codes_PA.txt``` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
+* ``community.py`` : Python script containing the function for community identification based on recursive random walk with restart
+* ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds for each disease
+* ``run_community_ID.py`` : Main Python script containing the function to automatize the community identification for a list of diseases
+* ``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
 
 The ```ToyExample``` folder contains a toy example version of a multiplex network and the associated modified versions of the Python scripts to run community identification for one disease example.
 
@@ -24,7 +24,7 @@ The ```ToyExample``` folder contains a toy example version of a multiplex networ
 
 After having checked and/or modified the script parameters in accordance to your data, run the following command : 
 
-```python run_community_ID.py```
+``Actionspython run_community_ID.py``
 
 This will create seeds files, configuration files, and output folders for each disease. The community identified for a disease is contained in the file seeds_ID.txt (where ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
 
