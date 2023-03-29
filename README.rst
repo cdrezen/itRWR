@@ -12,7 +12,7 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
  Installation
 -----------------
 
-.. code-block:: 
+.. code-block:: console
     python setup.py install
 
 -----------------
