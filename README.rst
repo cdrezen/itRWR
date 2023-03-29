@@ -26,8 +26,9 @@ Usage
 
 After having checked and/or modified the script parameters in accordance to your data, run the following command : 
 
-::
-* from itRWR import community_identification *
+.. code-block:: python
+
+from itRWR import community_identification 
 import os
 
 path = os.path.dirname(os.path.realpath(__file__))
