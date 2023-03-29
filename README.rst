@@ -8,6 +8,12 @@ MultiXrank based algorithm for Community Identification using Recursive Random W
 This repository contains an algorithm allowing to perform a recursive random walk with restart on a multiplex network. This algorithm is based on 
 MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
 
+-----------------
+ Installation
+-----------------
+
+.. code-block:: 
+    python setup.py install
 
 -----------------
  Files
