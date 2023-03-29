@@ -13,6 +13,7 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 -----------------
 
 .. highlight:: sh
+
     $ python setup.py install
 
 -----------------
