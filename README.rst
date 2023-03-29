@@ -16,7 +16,7 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 * ``run_community_ID.py`` : Main Python script containing the function to automatize the community identification for a list of diseases
 * ``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
 
-The ```ToyExample``` folder contains a toy example version of a multiplex network and the associated modified versions of the Python scripts to run community identification for one disease example.
+The ``ToyExample`` folder contains a toy example version of a multiplex network and the associated modified versions of the Python scripts to run community identification for one disease example.
 
 -----------------
 Usage
