@@ -19,12 +19,18 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 
          
 -----------------
- Files
+ Library Codes
 -----------------
 
 * ``community.py`` : Python script containing the function for community identification based on recursive random walk with restart
 * ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds for each disease
 * ``run_community_ID.py`` : Main Python script containing the function to automatize the community identification for a list of diseases
+
+
+-----------------
+Data
+-----------------
+
 * ``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
 
 The ``ToyExample`` folder contains a toy example version of a multiplex network to run community identification for one disease example.
