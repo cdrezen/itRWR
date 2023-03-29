@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+itRWR/__init__.py
+itRWR/community.py
+itRWR/create_config_seed_files.py
+itRWR/run_community_ID.py
+itRWR.egg-info/PKG-INFO
+itRWR.egg-info/SOURCES.txt
+itRWR.egg-info/dependency_links.txt
+itRWR.egg-info/requires.txt
+itRWR.egg-info/top_level.txt
