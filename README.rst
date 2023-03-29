@@ -12,21 +12,10 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
  Installation
 -----------------
 
-
-.. group-tab:: Commands       
-                          ::                                   
+                                
            
-    $ python setup.py install
+ $ python setup.py install
 
-.. tabs::
-
-   .. group-tab:: Commands       
-                            
-      ::                                   
-                                     
-         pip install -r Documentation/requirements.txt                                                              
-         
-         
          
 -----------------
  Files
