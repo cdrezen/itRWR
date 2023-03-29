@@ -31,7 +31,9 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
 Data
 -----------------
 
-* ``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
+
+``multiplex`` : The folder contain a multiplex network of genes composed of five layers (Coexpressions, Complexes, Pathways, PPI, Diseases-involvement)
+``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
 
 The ``ToyExample`` folder contains a toy example version of a multiplex network to run community identification for one disease example.
 
