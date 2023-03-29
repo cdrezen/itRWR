@@ -35,7 +35,7 @@ After having checked and/or modified the script parameters in accordance to your
     path = path + '/'
     os.chdir(path)
 
-    list_disease = "orpha_codes_toy_ex.txt"
+    list_disease = "orpha_codes_PA.txt"
     num_iteration = 10
     community_identification(path, list_disease, num_iteration)
 
