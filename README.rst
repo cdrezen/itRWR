@@ -28,16 +28,16 @@ After having checked and/or modified the script parameters in accordance to your
 
 .. code-block:: python
 
-from itRWR import community_identification 
-import os
+    from itRWR import community_identification 
+    import os
 
-path = os.path.dirname(os.path.realpath(__file__))
-path = path + '/'
-os.chdir(path)
+    path = os.path.dirname(os.path.realpath(__file__))
+    path = path + '/'
+    os.chdir(path)
 
-list_disease = "orpha_codes_toy_ex.txt"
-num_iteration = 10
-community_identification(path, list_disease, num_iteration)
+    list_disease = "orpha_codes_toy_ex.txt"
+    num_iteration = 10
+    community_identification(path, list_disease, num_iteration)
 
 
 This will create seeds files, configuration files, and output folders for each disease. The community identified for a disease is contained in the file seeds_ID.txt (where ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
