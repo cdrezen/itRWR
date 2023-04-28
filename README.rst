@@ -32,9 +32,9 @@ Data
 -----------------
 
 
-``multiplex`` : This folder contains a toy example of a multiplex biological network composed of five layers (PPI, Pathways, Co-expression, Complexes, Disease involvement). The whole networks used in this study are available on the NDEX server : https://www.ndexbio.org/index.html#/search?searchType=All&searchString=cecile.beust&searchTermExpansion=false
+``multiplex`` : This folder contains a toy example of a multiplex biological network composed of five layers (PPI, Pathways, Co-expression, Complexes, Disease involvement). The whole networks used in this study are available on the NDEX server : `<https://www.ndexbio.org/index.html#/search?searchType=All&searchString=cecile.beust&searchTermExpansion=false>`_
 
-``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG)
+``orpha_codes_PA.txt`` : File containing Premature Aging disease identifiers and their associated causative genes from ORPHANET (`<https://www.orpha.net/consor4.01/www/cgi-bin/?lng=ENG>`_)
 
 The ``ToyExample`` folder contains the toy example version of the multiplex network to run the community identification for one disease example, and with 10 iterations.
 
