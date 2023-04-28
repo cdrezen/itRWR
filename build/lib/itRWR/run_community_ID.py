@@ -3,20 +3,19 @@ from itRWR.create_config_seed_files import *
 import os
 
 
-def community_identification(path: str, list_diseases: str, nb_iter: int) -> None:
+def community_identification(path: str, diseases: str, nb_iter: int) -> None:
     """Function to run community identification for diseases for which 
     identifiers are stored in a list
 
     Args:
         path (str) : path of the working directory
-        list_disease (list): list containing identifiers of diseases 
-        to analyze
+        diseases (str): file containing ORPHANET diseases
         nb_iter (int): the number of iterations we want to set for the 
-        recursive random walk with restart algorithm
+        iterative random walk with restart algorithm
     Return:
         None
     """
-    dico_diseases_seeds = build_seeds_file(list_diseases)
+    dico_diseases_seeds = build_seeds_file(diseases)
     build_config_files(path, dico_diseases_seeds)
     # Define diseases to analyze
     list_diseases_analyzed = [disease for disease in dico_diseases_seeds.keys()]

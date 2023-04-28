@@ -22,22 +22,23 @@ def build_seeds_file(orpha_seeds: str) -> dict:
     dico_seeds = {}
     with open(orpha_seeds, 'r') as fi:
         for line in fi:
-            # separate diseases from seeds in the input file
-            disease = line.split("\t")[0]
-            # split seeds
-            seeds_rsplit = line.split("\t")[1].rsplit()
-            seeds = [genes.split(",") for genes in seeds_rsplit]
-            # initialize key in dico for disease
-            dico_seeds[disease] = []
-            # writing one seeds file for each set of seeds
-            # we take the ORPHANET code of the disease to name the seeds files
-            with open(f"seeds_{disease}.txt", 'w') as fo:
-                for list_genes in seeds:
-                    for genes in list_genes:
-                        # add set of seeds in dico
-                        dico_seeds[disease].append(genes)
-                        # write seeds in the output file
-                        fo.write(genes + "\n")
+            values = line.strip().split("\t")
+            if len(values) > 1:
+                # separate diseases from seeds in the input file
+                disease = line.split("\t")[0]
+                seeds_rsplit = line.split("\t")[1].rsplit()
+                seeds = [genes.split(",") for genes in seeds_rsplit]
+                # initialize key in dico for disease
+                dico_seeds[disease] = []
+                # writing one seeds file for each set of seeds
+                # we take the ORPHANET code of the disease to name the seeds files
+                with open(f"seeds_{disease}.txt", 'w') as fo:
+                    for list_genes in seeds:
+                        for genes in list_genes:
+                            # add set of seeds in dico
+                            dico_seeds[disease].append(genes)
+                            # write seeds in the output file
+                            fo.write(genes + "\n")
         return dico_seeds
 
 
@@ -46,7 +47,7 @@ def build_config_files(path: str, dico_diseases_seeds: dict) -> None:
     for each disease
 
     Args:
-        path (str) : path of the wirking directory
+        path (str) : path of the working directory
         dico_diseases_seeds (dict): dictionary containing
         disease ORPHANET identifiers and their associated
         seeds
