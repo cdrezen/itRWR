@@ -3,7 +3,20 @@ import pandas as pd
 import subprocess
 import glob
 
-def cluster_rwr_max_size(path, config_file, out_folder, seeds_file, id, nb_iterations):
+def cluster_rwr_max_size(path: str, config_file: str, out_folder: str, seeds_file: str, id: int, nb_iterations: int) -> None:
+    """Function to run community identification with itRWR, with a defined
+    number of iterations
+
+    Args:
+        path (str): path of working directory
+        config_file (str): name of the configuration file
+        out_folder (str): name of the output folder
+        seeds_file (str): name of the seeds file
+        id (int): identifier (ORPHANET code) of the disease
+        nb_iterations (int): number of iterations
+    Return:
+        None
+    """
     print(id)
     # copy seeds file in output directory
     subprocess.call(["cp", seeds_file, out_folder])
