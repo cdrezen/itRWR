@@ -5,11 +5,11 @@ def build_seeds_file(orpha_seeds: str) -> dict:
     file containing ORPHANET disease IDs and
     their corresponding causative genes.
     These causative genes are taken as 
-    seeds for the recursive random walk with 
+    seeds for the iterative random walk with 
     restart
 
     Args:
-        orpha_seeds (str): file name of
+        orpha_seeds (str): name of
         the file containing ORPHANET codes 
         of diseases and their corresponding
         seeds
@@ -30,7 +30,7 @@ def build_seeds_file(orpha_seeds: str) -> dict:
             # initialize key in dico for disease
             dico_seeds[disease] = []
             # writing one seeds file for each set of seeds
-            # we take the orpha code of the disease to name the seeds files
+            # we take the ORPHANET code of the disease to name the seeds files
             with open(f"seeds_{disease}.txt", 'w') as fo:
                 for list_genes in seeds:
                     for genes in list_genes:
@@ -46,6 +46,7 @@ def build_config_files(path: str, dico_diseases_seeds: dict) -> None:
     for each disease
 
     Args:
+        path (str) : path of the wirking directory
         dico_diseases_seeds (dict): dictionary containing
         disease ORPHANET identifiers and their associated
         seeds
