@@ -57,7 +57,7 @@ After having checked and/or modified the script parameters in accordance to your
     community_identification(path, list_disease, num_iteration)
 
 
-This will create seed files, configuration files, and output folders needed for each community disease. The community identified for a disease is contained in the file seeds_ID.txt (In this example, ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
+This will create seed files, configuration files, and output folders needed for each community disease. The community identified for a disease is contained in the file ``seeds_ID.txt`` (In this example, ID is the ORPHANET identifier of the disease) inside the corresponding output folder.
 
 -----------------
 Example
@@ -65,7 +65,15 @@ Example
 To test the algorithm on a simple example you can run the version of the script ``run.py`` contained in the ``ToyExample`` folder. This will apply community identification for one disease, Hutchinson-Gilford Progeria Syndrome (ORPHANET code: 740) on the toy example multiplex network, with a number of iterations set to 10 for the itRWR algorithm. 
 
 It will generate the following output folder ``results_10_740`` containing the following files :
- 
+
 * ``config.yml``: a copy of the configuration file for the disease
 * ``multiplex_1.tsv``: a file containing the rankings for each node of the multiplex network after the itRWR algorithm has been applied
 * ``seeds_740.txt``: a file containing the nodes of the community identified for the disease. Since we applied 10 iterations of the algorithm, and that the disease has 2 starting seeds, the final community obtained contains 12 nodes. 
+
+
+-----------------
+References
+-----------------
+* Baptista, A., Gonzalez, A. & Baudot, A. Universal multilayer network exploration by random walk with restart. en. Communications Physics 5, 170. ISSN: 2399-3650. doi:10.1038/s42005-022-00937-9 (July 2022).
+
+* Rath, A. et al. Representation of rare diseases in health information systems: The orphanet approach to serve a wide range of end users. Human Mutation 33, 803–808. ISSN:10597794. doi:10.1002/humu.22078 (2012)
