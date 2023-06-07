@@ -64,7 +64,8 @@ Example
 -----------------
 To test the algorithm on a simple example you can run the version of the script ``run.py`` contained in the ``ToyExample`` folder. This will apply community identification for one disease, Hutchinson-Gilford Progeria Syndrome (ORPHANET code: 740) on the toy example multiplex network, with a number of iterations set to 10 for the itRWR algorithm. 
 
-It will generate the following output folder ``results_10_740`` containing the following files : 
+It will generate the following output folder ``results_10_740`` containing the following files :
+ 
 * ``config.yml``: a copy of the configuration file for the disease
 * ``multiplex_1.tsv``: a file containing the rankings for each node of the multiplex network after the itRWR algorithm has been applied
 * ``seeds_740.txt``: a file containing the nodes of the community identified for the disease. Since we applied 10 iterations of the algorithm, and that the disease has 2 starting seeds, the final community obtained contains 12 nodes. 
