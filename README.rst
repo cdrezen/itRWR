@@ -5,7 +5,7 @@ itRWR : MultiXrank based algorithm for Community Identification using Iterative 
 .. image:: https://github.com/anthbapt/itRWR/workflows/CI/badge.svg
     :target: https://github.com/anthbapt/itRWR/actions?query=branch%3Amaster+workflow%3ACI
  
-This repository contains an algorithm allowing to perform an iterative random walk with restart on a multiplex network, in order to identify disease-associated communities. This algorithm is based on 
+This repository contains an algorithm allowing to perform an iterative random walk with restart on a multiplex network. This algorithm is based on 
 MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing to perform random walk with restart on universal multilayer networks.
 
 -----------------
@@ -22,9 +22,9 @@ MultiXrank (https://github.com/anthbapt/multixrank), a Python package allowing t
  Library Codes
 -----------------
 
-* ``community.py`` : Python script containing the function for community identification based on iterative random walk with restart
-* ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds (causative genes) for each disease
-* ``run_community_ID.py`` : Main Python script containing the function to automatize the community identification for a list of diseases
+* ``community.py`` : Python script containing the function for community identification based on iterative Random Walk with Restart
+* ``create_config_seed_files.py`` : Python script to generate the configuration yml files and the files containing the seeds
+* ``run_community_ID.py`` : Main Python script containing the function to automatize the identification of several communities using itRWR
 
 
 -----------------
@@ -63,7 +63,7 @@ This will create seeds files, configuration files, and output folders for each d
 -----------------
 Example
 -----------------
-terative rand
+
 To test the algorithm on a simple example you can run the version of the script ``run.py`` contained in the ``ToyExample`` folder. This will apply community identification for one disease, Hutchinson-Gilford Progeria Syndrome (ORPHANET code: 740) on a simple multiplex network, with a maximal number of iterations set to 10 for the itRWR algorithm. 
 
 It will generate the following output folder : ``results_10_740``. This folder contains a copy of the configuration file used for the community identification for this disease. It contains also a file ``multiplex_1.tsv`` containing the rankings for each node of the multiplex network after the itRWR has been applied. The file ``seeds_740.txt`` contains the nodes of the community identified for the disease. Since we applied 10 iterations of the algorithm, and that the disease has 2 starting seeds, the final community obtained contains 12 nodes. 
