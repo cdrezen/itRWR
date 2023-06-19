@@ -63,7 +63,7 @@ def build_config_files(path: str, dico_diseases_seeds: dict) -> None:
         r = 0.7
         delta = 0.5
         eta = 1.0
-        tau = [1/5,1/5,1/5,1/5,1/5]
+        tau = [1/size for _ in range(size)]
 
         file.write(f'seed: seeds_{disease}.txt' + '\n')
         file.write('self_loops: 0' + '\n')
