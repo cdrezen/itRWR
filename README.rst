@@ -17,7 +17,14 @@ itRWR is based on MultiXrank (https://github.com/anthbapt/multixrank), a Python 
 
   $ python setup.py install
 
-         
+## Docker exemple usage
+```
+sudo docker build . -t itrwr
+sudo docker run -it itrwr bash
+cd ToyExemple
+python run.py
+```
+
 -----------------
  Library Codes
 -----------------
